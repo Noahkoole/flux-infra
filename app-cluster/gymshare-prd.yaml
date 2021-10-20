@@ -17,6 +17,6 @@ spec:
   prune: true
   sourceRef:
     kind: GitRepository
-    name: https://github.com/Noahkoole/Individueel-infra
+    name: Individueel-infra
   timeout: 2m0s
   validation: client
