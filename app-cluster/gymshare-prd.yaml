@@ -6,6 +6,13 @@ metadata:
   name: individueel-prd
   namespace: flux-system
 spec:
+  healthChecks:
+  - kind: Deployment
+    name: gateways-prd
+    namespace: gymshare-prd
+  - kind: Deployment
+    name: authentication-prd
+    namespace: gymshare-prd
   interval: 1m0s
   path: ./deploy/base
   prune: true
