@@ -1,4 +1,3 @@
-
 ---
 apiVersion: kustomize.toolkit.fluxcd.io/v1beta1
 kind: Kustomization
@@ -18,6 +17,6 @@ spec:
   prune: true
   sourceRef:
     kind: GitRepository
-    name: individueel-infra
+    name: Individueel-infra
   timeout: 2m0s
   validation: client
