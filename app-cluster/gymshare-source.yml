@@ -1,0 +1,11 @@
+---
+apiVersion: source.toolkit.fluxcd
+kind: GitRepository
+metadata:
+  name: individueel-infra
+  namespace: flux-system
+spec:
+  interval: 30s
+  ref:
+  	branch: main
+  url: https://github.com/Noahkoole/Individueel-infra
