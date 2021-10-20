@@ -1,7 +1,7 @@
 apiVersion: kustomize.toolkit.fluxcd.io/v1beta1
 kind: Kustomization
 metadata:
-  name: gymshare-prd
+  name: individueel-infra
   namespace: flux-system
 spec:
   healthChecks:
@@ -16,6 +16,6 @@ spec:
   prune: true
   sourceRef:
     kind: GitRepository
-    name: Individueel-infra
+    name: individueel-infra
   timeout: 2m0s
   validation: client
