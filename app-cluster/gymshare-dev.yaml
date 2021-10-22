@@ -11,6 +11,12 @@ spec:
   - kind: Deployment
     name: authentication-dev
     namespace: gymshare-dev
+  - kind: Deployment
+    name: workouts-dev
+    namespace: gymshare-dev
+  - kind: Deployment
+    name: users-dev
+    namespace: gymshare-dev
   interval: 1m0s
   path: ./deploy/overlays/dev
   prune: true
