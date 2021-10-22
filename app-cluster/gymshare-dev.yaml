@@ -1,0 +1,21 @@
+apiVersion: kustomize.toolkit.fluxcd.io/v1beta1
+kind: Kustomization
+metadata:
+  name: gymshare-dev
+  namespace: flux-system
+spec:
+  healthChecks:
+  - kind: Deployment
+    name: gateways-dev
+    namespace: gymshare-dev
+  - kind: Deployment
+    name: authentication-dev
+    namespace: gymshare-dev
+  interval: 1m0s
+  path: ./deploy/overlays/dev
+  prune: true
+  sourceRef:
+    kind: GitRepository
+    name: individueel-infra
+  timeout: 2m0s
+  validation: client
