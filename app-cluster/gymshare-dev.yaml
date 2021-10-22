@@ -17,6 +17,9 @@ spec:
   - kind: Deployment
     name: users-dev
     namespace: gymshare-dev
+  - kind: Deployment
+    name: mysql-workouts-dev
+    namespace: gymshare-dev
   interval: 1m0s
   path: ./deploy/overlays/dev
   prune: true
