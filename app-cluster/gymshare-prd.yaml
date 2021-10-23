@@ -20,6 +20,9 @@ spec:
   - kind: Deployment
     name: mysql-workouts-prd
     namespace: gymshare-prd
+  - kind: Deployment
+    name: mysql-users-prd
+    namespace: gymshare-prd
   interval: 1m0s
   path: ./deploy/overlays/prd
   prune: true
